@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
 
 :root {
-  --bg-main: #ffe53bd8;
-  --bg-detail: #ff2525da;
+  --bg-main: #0d6cf9d8;
+  --bg-detail: #e506f5da;
+  --bg-detailbkp: #ff25ffda;
+  --bg-detailRef: #ff2525da;
+  --bg-mainRef: #ffe53bd8;
 }
 
 * {
