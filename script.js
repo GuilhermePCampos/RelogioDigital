@@ -1,8 +1,11 @@
 const horas = document.getElementById("horas");
 const minutos = document.getElementById("minutos");
 const segundos = document.getElementById("segundos");
+const dia = document.getElementById("dia");
+const mes = document.getElementById("mes");
+const ano = document.getElementById("ano");
 
-const relogio = setInterval(function time() {
+function setHours() {
   let dateToday = new Date();
   let horaAtual = dateToday.getHours();
   let minutoAtual = dateToday.getMinutes();
@@ -15,4 +18,15 @@ const relogio = setInterval(function time() {
   horas.textContent = horaAtual;
   minutos.textContent = minutoAtual;
   segundos.textContent = segundoAtual;
+}
+
+function setDate() {
+  let date = new Date();
+  dia.textContent = date.getDay() < 10 ? "0" + date.getDay() : date.getDay();
+  mes.textContent = date.getMonth() < 10 ? "0" + date.getMonth() : date.getMonth();
+  ano.textContent = date.getFullYear().toString().slice(2);
+}
+setDate();
+setInterval(() => {
+  setHours();
 })
