@@ -32,7 +32,7 @@ setInterval(() => {
   setHours();
 })
 
-// setInterval(updateBackground, 100);
+setInterval(updateBackground, 100);
 
 function updateBackground() {
   // Atualiza o background com o ângulo atual
