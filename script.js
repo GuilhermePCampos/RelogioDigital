@@ -33,6 +33,7 @@ setInterval(() => {
 })
 
 setInterval(updateBackground, 100);
+// setInterval(updateBackgroundRGB, 1000);
 
 function updateBackground() {
   // Atualiza o background com o ângulo atual
@@ -44,4 +45,14 @@ function updateBackground() {
   if (angle >= 360) {
       angle = 0; // Retorna ao ângulo inicial
   }
+}
+
+function updateBackgroundRGB() {
+  let r = Math.random() * 255;
+  let g = Math.random() * 255;
+  let b = Math.random() * 255;
+
+  document.body.style.background = `rgb(${r},${g},${b})`;
+
+  
 }
